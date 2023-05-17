@@ -1,10 +1,10 @@
-#Call center dashboard in Excel
+# Call center dashboard in Excel
 
 This project is meant to learn how to use Excel for a simple data analysis project
 
-##The files
+## The files
 
-###Call Center.csv
+### Call Center.csv
 
 The **Call Center.csv** file contains about $33000$ records of calls. 
 
@@ -12,9 +12,9 @@ Each call is stored in a row of the *csv* file and each of these rows has $12$ c
 
 Calls have an identifier string `id`, the name of the customer `customer_name`, the perceived sentiment during the call `sentiment`, an integer score value `csat_score`, the date the call happened `call_timestamp`, the reason of the call `reason`, the city of the customer `city`, the state where the city is `state`, the contact channel used `channel`, the response time `response_time`, the duration of the call in minutes `call duration in minutes` and the place of the call center `call_center`
 
-##Procedure
+## Procedure
 
-###Observe data and make sure all is good
+### Observe data and make sure all is good
 
 **Let's standardize entries in the various columns** (*if uploading the csv in excel through 'Data > from text/csv' a standard format is automatically imposed*)
 
@@ -26,7 +26,7 @@ Calls have an identifier string `id`, the name of the customer `customer_name`, 
 
 4. all of the data were collected in October 2020, so no need to use this redundant information: let's create a `Call_Day` column that contains only the day of the call
 
-###Pivot tables and build charts
+### Pivot tables and build charts
 
 Let's build charts and Pivot Tables that will later be used in the dashboard. I'll create $5$ charts:
 
@@ -38,7 +38,7 @@ Let's build charts and Pivot Tables that will later be used in the dashboard. I'
 
 (I may do something with sentiment, like an appreciation bar, or some emojis with transparency depending on the amount of sentiment expressed)
 
-####Line chart
+#### Line chart
 
 Show the trends of calls by listing the count of call for each day
 
@@ -46,7 +46,7 @@ Show the trends of calls by listing the count of call for each day
 
 2. While having the Pivot Table selected (or a cell belonging to it) I can access the 'Pivot Table analysis' menu; look for 'Pivot chart' and create a line chart out of data stored in the pivot table
 
-####Doughnut chart
+#### Doughnut chart
 
 Show the preferred communication channels 
 
@@ -54,7 +54,7 @@ Show the preferred communication channels
 
 2. Make a doughnut chart out of those data
 
-####Map
+#### Map
 
 Show the frequency of calls for each state
 
@@ -66,7 +66,7 @@ Show the frequency of calls for each state
 
 4. Data that have been used to create the map aren't connected to the pivot table; let's connect them now: click on the map, go to "Chart Design > Select Data" and select data from the pivot table
 
-####Reason of calling
+#### Reason of calling
 
 Show a column bars chart with the reason of calling
 
@@ -74,7 +74,7 @@ Show a column bars chart with the reason of calling
 
 2. Make a column chart with the data
 
-####Response time
+#### Response time
 
 Show the response time 
 
@@ -82,9 +82,9 @@ Show the response time
 
 2. Make a bar chart with the data
 
-##Other info
+## Other info
 
-###How to use regular expressions in Excel
+### How to use regular expressions in Excel
 
 1. allow 'Developing' menu in excel by choosing the option in the 'File > Navigation bar' menu
 
