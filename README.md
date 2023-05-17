@@ -6,7 +6,9 @@ This project is meant to learn how to use Excel for a simple data analysis proje
 
 ### Call Center.csv
 
-The **Call Center.csv** file contains about $33000$ records of calls. 
+The **Call Center.csv** file contains about $33000$ ($32941$) records of calls. 
+
+[https://data.world/markbradbourne/rwfd-real-world-fake-data/workspace/file?filename=Call+Center.csv]
 
 Each call is stored in a row of the *csv* file and each of these rows has $12$ columns.
 
@@ -81,6 +83,20 @@ Show the response time
 1. Create a Pivot table with `response_time` as rows and `id` as values
 
 2. Make a bar chart with the data
+
+### Implement the Filter function
+
+The filter function enables me to filter for different dimensions
+
+1. Click on one of the chart, e.g. the Daily trend
+
+2. Choose "insert slicer" and select the fields, e.g. `state`, `call_center`, `csat_score`, `sentiment`
+
+3. Place slicers on the page
+
+4. I want to connect the slicers to the other tables: right click on the slicer and select "report connections", then select all of the pivot tables
+
+5. Repeat previous point for every slicer
 
 ## Other info
 
